@@ -1,0 +1,159 @@
+_dataset:
+  class: BNCI2014_002
+  code: BNCI2014-002
+  doi: 10.1007/s00500-012-0895-4
+  interval:
+  - 3
+  - 8
+  n_subjects: 14
+  paradigm: imagery
+acquisition:
+  cap_manufacturer: Guger Technologies OG
+  cap_model: g.LADYbird
+  channel_types:
+    eeg: 15
+  electrode_material: Ag/AgCl
+  electrode_type: active
+  filters: 8th order Butterworth band-pass filters
+  ground: right mastoid
+  hardware: g.USBamp
+  line_freq: 50.0
+  montage: Laplacian
+  n_channels: 15
+  reference: left mastoid
+  sampling_rate: 512.0
+  sensor_type: Ag/AgCl
+  sensors:
+  - EEG1
+  - EEG2
+  - EEG3
+  - EEG4
+  - EEG5
+  - EEG6
+  - EEG7
+  - EEG8
+  - EEG9
+  - EEG10
+  - EEG11
+  - EEG12
+  - EEG13
+  - EEG14
+  - EEG15
+  software: BCI2000
+bci_application:
+  applications:
+  - communication
+  - control
+  environment: laboratory
+  online_feedback: true
+cross_validation:
+  cv_method: train-test split
+  evaluation_type:
+  - within_subject
+data_processed: true
+data_structure:
+  n_blocks: 8
+  n_trials: 160
+  n_trials_per_class:
+    feet: 80
+    right_hand: 80
+  trials_context: total per subject
+documentation:
+  associated_paper_doi: 10.3217/978-3-85125-378-8-61
+  contact_info:
+  - david.steyrl@tugraz.at
+  - reinhold.scherer@tugraz.at
+  - oswin.foerstner@student.tugraz.at
+  - gernot.mueller@tugraz.at
+  country: Austria
+  doi: 10.1515/bmt-2014-0117
+  funding:
+  - FP7 BackHome (No. 288566)
+  - FP7 ABC (No. 287774)
+  institution: Graz University of Technology
+  institution_department: Institute for Knowledge Discovery, Laboratory of Brain-Computer Interfaces
+  investigators:
+  - David Steyrl
+  - Reinhold Scherer
+  - Oswin Förstner
+  - Gernot R. Müller-Putz
+  keywords:
+  - brain-computer interfaces
+  - machine learning
+  - random forests
+  - regularized linear discriminant analysis
+  - sensorimotor rhythms
+  license: CC-BY-ND-4.0
+  publication_year: 2014
+  repository: BNCI Horizon
+experiment:
+  class_labels:
+  - right_hand
+  - feet
+  events:
+    feet: 770
+    right_hand: 769
+  feedback_type: continuous
+  mode: online
+  n_classes: 2
+  paradigm: imagery
+  primary_modality: visual
+  stimulus_modalities:
+  - visual
+  stimulus_type: bar_graph
+  study_design: 'Two-class motor imagery: right hand and feet. Cue-guided Graz-BCI training paradigm with recording, training,
+    and feedback within a single session.'
+  synchronicity: synchronous
+  trial_duration: 5.0
+file_format: MAT
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_duration_s: 5.0
+  imagery_tasks:
+  - right_hand
+  - feet
+participants:
+  age_max: 30.0
+  age_min: 20.0
+  bci_experience: mixed
+  health_status: healthy
+  n_subjects: 14
+  species: human
+performance:
+  accuracy_percent: 79.3
+  median_accuracy: 80.42
+  peak_accuracy: 89.67
+preprocessing:
+  data_state: minimally preprocessed (online filtered)
+  filter_order: 8
+  filter_type: Butterworth
+  preprocessing_applied: true
+  preprocessing_steps:
+  - bandpass filtering
+runs_per_session: 8
+sessions_per_subject: 1
+signal_processing:
+  classifiers:
+  - Random Forest
+  - Shrinkage LDA
+  feature_extraction:
+  - CSP
+  - DFT
+  - Bandpower
+  frequency_bands:
+    alpha:
+    - 6
+    - 14
+    beta:
+    - 14
+    - 40
+  spatial_filters:
+  - CSP
+  - Laplacian
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor Imagery

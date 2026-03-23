@@ -1,0 +1,9 @@
+﻿filename	acq_time
+eeg/sub-2_ses-0_task-imagery_run-0_recording-train_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-1_recording-train_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-2_recording-train_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-3_recording-train_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-4_recording-train_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-5_recording-test_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-6_recording-test_eeg.bdf	2008-01-01T00:00:00.000000Z
+eeg/sub-2_ses-0_task-imagery_run-7_recording-test_eeg.bdf	2008-01-01T00:00:00.000000Z

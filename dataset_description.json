@@ -1,0 +1,41 @@
+{
+	"Name": "BNCI 2014-002 Motor Imagery dataset",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "CC-BY-ND-4.0",
+	"Authors": [
+		"David Steyrl",
+		"Reinhold Scherer",
+		"Oswin F\u00f6rstner",
+		"Gernot R. M\u00fcller-Putz"
+	],
+	"Funding": [
+		"FP7 BackHome (No. 288566)",
+		"FP7 ABC (No. 287774)"
+	],
+	"ReferencesAndLinks": [
+		"10.3217/978-3-85125-378-8-61"
+	],
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.5.0"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1007/s00500-012-0895-4"
+		}
+	],
+	"Keywords": [
+		"brain-computer interfaces",
+		"machine learning",
+		"random forests",
+		"regularized linear discriminant analysis",
+		"sensorimotor rhythms"
+	],
+	"PublicationYear": 2014
+}
