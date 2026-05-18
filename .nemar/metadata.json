@@ -1,0 +1,114 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "David Steyrl": {},
+    "Reinhold Scherer": {},
+    "Oswin Förstner": {},
+    "Gernot R. Müller-Putz": {}
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.1007/s00500-012-0895-4",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "10.3217/978-3-85125-378-8-61",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000171",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000171",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1515/bmt-2014-0117",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.21105/joss.01896",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsReferencedBy"
+    }
+  ],
+  "funding_references": [
+    {
+      "funder_name": "European Commission",
+      "award_number": "288566",
+      "award_title": "FP7 BackHome"
+    },
+    {
+      "funder_name": "European Commission",
+      "award_number": "287774",
+      "award_title": "FP7 ABC"
+    }
+  ],
+  "title": "BNCI 2014-002 Motor Imagery dataset",
+  "license": "CC-BY-ND-4.0",
+  "dataset_type": "derivative",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "580.4 MB (115 files)"
+  ],
+  "formats": [
+    ".bdf",
+    ".html",
+    ".json",
+    ".md",
+    ".tsv",
+    ".yaml",
+    ".yml"
+  ],
+  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering, referenced to left mastoid with right mastoid ground and Laplacian spatial filtering, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked for brain-computer interface applications using machine learning classifiers including random forests and regularized linear discriminant analysis.",
+  "methods_description": "EEG data were acquired from 14 healthy subjects (age 20-30 years) using a g.USBamp amplifier with 15 active Ag/AgCl electrodes in a g.LADYbird cap, referenced to left mastoid with right mastoid ground. Sampling rate was 512 Hz with 8th order Butterworth band-pass filtering applied online. Subjects performed cue-guided motor imagery of right hand and feet movements in 8 runs per session, with 160 total trials (80 per class) and 5-second imagery duration. Continuous visual feedback was provided via bar graph stimulus presentation.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "sensorimotor rhythms"
+    },
+    {
+      "term": "machine learning"
+    },
+    {
+      "term": "random forests"
+    },
+    {
+      "term": "regularized linear discriminant analysis"
+    },
+    {
+      "term": "Graz-BCI"
+    },
+    {
+      "term": "CSP"
+    },
+    {
+      "term": "two-class classification"
+    }
+  ],
+  "source_hash": "d6b48c8b5c5f1ce1aedaa1737e6b302d497460d2d1a4b9116518be4bb24cf2d8"
+}
