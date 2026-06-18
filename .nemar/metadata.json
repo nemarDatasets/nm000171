@@ -1,12 +1,42 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "BNCI 2014-002 Motor Imagery dataset",
+  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering and Laplacian montage, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked with multiple machine learning classifiers (Random Forest, Shrinkage LDA) achieving median accuracy of 80.42%, and serves as a standard evaluation resource for brain-computer interface research.",
+  "methods_description": "EEG data were acquired from 14 healthy subjects (age 20-30 years) using a g.USBamp amplifier with 15 active Ag/AgCl electrodes in a g.LADYbird cap, sampled at 512 Hz with left mastoid reference and right mastoid ground. Online acquisition employed 8th order Butterworth band-pass filtering and Laplacian spatial filtering via BCI2000 software. Subjects performed cue-guided motor imagery of right hand or feet movements (5 s duration) across 8 runs per session with visual bar-graph feedback, yielding 160 trials total (80 per class). Data preprocessing included bandpass filtering with feature extraction using Common Spatial Patterns, Discrete Fourier Transform, and bandpower analysis in alpha (6-14 Hz) and beta (14-40 Hz) bands.",
+  "license": "CC-BY-ND-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "David Steyrl": {},
     "Reinhold Scherer": {},
     "Oswin Förstner": {},
     "Gernot R. Müller-Putz": {}
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "sensorimotor rhythms"
+    },
+    {
+      "term": "machine learning"
+    },
+    {
+      "term": "Common Spatial Patterns"
+    },
+    {
+      "term": "linear discriminant analysis"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1007/s00500-012-0895-4",
@@ -48,22 +78,19 @@
     {
       "funder_name": "European Commission",
       "award_number": "288566",
-      "award_title": "FP7 BackHome"
+      "award_title": "BackHome"
     },
     {
       "funder_name": "European Commission",
       "award_number": "287774",
-      "award_title": "FP7 ABC"
+      "award_title": "ABC"
     }
   ],
-  "title": "BNCI 2014-002 Motor Imagery dataset",
-  "license": "CC-BY-ND-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "580.4 MB (115 files)"
   ],
@@ -76,39 +103,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering, referenced to left mastoid with right mastoid ground and Laplacian spatial filtering, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked for brain-computer interface applications using machine learning classifiers including random forests and regularized linear discriminant analysis.",
-  "methods_description": "EEG data were acquired from 14 healthy subjects (age 20-30 years) using a g.USBamp amplifier with 15 active Ag/AgCl electrodes in a g.LADYbird cap, referenced to left mastoid with right mastoid ground. Sampling rate was 512 Hz with 8th order Butterworth band-pass filtering applied online. Subjects performed cue-guided motor imagery of right hand and feet movements in 8 runs per session, with 160 total trials (80 per class) and 5-second imagery duration. Continuous visual feedback was provided via bar graph stimulus presentation.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "sensorimotor rhythms"
-    },
-    {
-      "term": "machine learning"
-    },
-    {
-      "term": "random forests"
-    },
-    {
-      "term": "regularized linear discriminant analysis"
-    },
-    {
-      "term": "Graz-BCI"
-    },
-    {
-      "term": "CSP"
-    },
-    {
-      "term": "two-class classification"
-    }
-  ],
-  "source_hash": "d6b48c8b5c5f1ce1aedaa1737e6b302d497460d2d1a4b9116518be4bb24cf2d8"
+  "source_hash": "c0381c120762f6b1a3445a9aed2c2733cd6bd312ee6d4f8d032111876619f0d7"
 }
