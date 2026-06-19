@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-002 Motor Imagery dataset",
-  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering and Laplacian montage, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked with multiple machine learning classifiers (Random Forest, Shrinkage LDA) achieving median accuracy of 80.42%, and serves as a standard evaluation resource for brain-computer interface research.",
-  "methods_description": "EEG data were acquired from 14 healthy subjects (age 20-30 years) using a g.USBamp amplifier with 15 active Ag/AgCl electrodes in a g.LADYbird cap, sampled at 512 Hz with left mastoid reference and right mastoid ground. Online acquisition employed 8th order Butterworth band-pass filtering and Laplacian spatial filtering via BCI2000 software. Subjects performed cue-guided motor imagery of right hand or feet movements (5 s duration) across 8 runs per session with visual bar-graph feedback, yielding 160 trials total (80 per class). Data preprocessing included bandpass filtering with feature extraction using Common Spatial Patterns, Discrete Fourier Transform, and bandpower analysis in alpha (6-14 Hz) and beta (14-40 Hz) bands.",
+  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering and Laplacian montage, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked for brain-computer interface applications using machine learning classifiers including random forests and regularized linear discriminant analysis.",
+  "methods_description": "EEG data were acquired at 512 Hz sampling rate from 14 healthy subjects (age 20-30 years) using 15 active Ag/AgCl electrodes in a g.LADYbird cap (Guger Technologies) with left mastoid reference and right mastoid ground. Online acquisition employed 8th order Butterworth band-pass filtering and BCI2000 software with g.USBamp hardware. Subjects performed cue-guided motor imagery of right hand or feet movements (5 s duration) with visual bar-graph feedback in 8 runs per session, yielding 160 trials total (80 per class). Data were preprocessed with Laplacian spatial filtering and bandpass filtering in alpha (6-14 Hz) and beta (14-40 Hz) frequency bands.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -29,9 +29,6 @@
     },
     {
       "term": "machine learning"
-    },
-    {
-      "term": "Common Spatial Patterns"
     },
     {
       "term": "linear discriminant analysis"
@@ -78,12 +75,12 @@
     {
       "funder_name": "European Commission",
       "award_number": "288566",
-      "award_title": "BackHome"
+      "award_title": "FP7 BackHome"
     },
     {
       "funder_name": "European Commission",
       "award_number": "287774",
-      "award_title": "ABC"
+      "award_title": "FP7 ABC"
     }
   ],
   "resource_type_general": "Dataset",
@@ -103,5 +100,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "c0381c120762f6b1a3445a9aed2c2733cd6bd312ee6d4f8d032111876619f0d7"
+  "source_hash": "4f4ffb6d484e87d5bc107c1b7165b2926d0fa8ee638419eb0562bb8339a70f50"
 }
