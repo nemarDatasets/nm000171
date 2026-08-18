@@ -3,7 +3,7 @@
   "pipeline_stage": "validated",
   "title": "BNCI 2014-002 Motor Imagery dataset",
   "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering and Laplacian montage, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked for brain-computer interface applications using machine learning classifiers including random forests and regularized linear discriminant analysis.",
-  "methods_description": "EEG data were recorded from 14 healthy subjects (age 20-30 years) using a g.USBamp amplifier with 15 active Ag/AgCl electrodes in a g.LADYbird cap, referenced to left mastoid with right mastoid ground. Signals were sampled at 512 Hz and filtered online using 8th order Butterworth band-pass filters (50 Hz line frequency). Subjects performed cue-guided motor imagery of right hand or feet movements for 5-second trials within 8 runs per session, receiving continuous visual bar-graph feedback. Data were preprocessed with bandpass filtering and spatial filtering techniques including Common Spatial Patterns and Laplacian montage.",
+  "methods_description": "EEG data were acquired at 512 Hz sampling rate from 14 healthy subjects (age 20-30 years) using 15 active Ag/AgCl electrodes in a g.LADYbird cap (Guger Technologies OG) with Laplacian montage, left mastoid reference, and right mastoid ground. Recording was performed using g.USBamp hardware and BCI2000 software with 8th order Butterworth band-pass filtering (online) and 50 Hz line frequency notch filtering. Subjects performed cue-guided motor imagery of right hand or feet movements for 5-second trials within a single session containing 8 runs with continuous visual bar-graph feedback.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -14,12 +14,12 @@
   },
   "keywords": [
     {
+      "term": "motor imagery"
+    },
+    {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "motor imagery"
     },
     {
       "term": "EEG"
@@ -29,6 +29,9 @@
     },
     {
       "term": "machine learning"
+    },
+    {
+      "term": "common spatial patterns"
     },
     {
       "term": "linear discriminant analysis"
@@ -75,12 +78,12 @@
     {
       "funder_name": "European Commission",
       "award_number": "288566",
-      "award_title": "BackHome"
+      "award_title": "FP7 BackHome"
     },
     {
       "funder_name": "European Commission",
       "award_number": "287774",
-      "award_title": "ABC"
+      "award_title": "FP7 ABC"
     }
   ],
   "resource_type_general": "Dataset",
@@ -101,5 +104,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "4f4ffb6d484e87d5bc107c1b7165b2926d0fa8ee638419eb0562bb8339a70f50"
+  "source_hash": "1816364feb7eb55e4499d19bb84c3941bcabfb1ef86d245863a6ea7100cebdb3"
 }
