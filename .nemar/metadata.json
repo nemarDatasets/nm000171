@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "BNCI 2014-002 Motor Imagery dataset",
-  "description": "The BNCI 2014-002 Motor Imagery dataset comprises EEG recordings from 14 healthy subjects performing two-class motor imagery tasks (right hand and feet imagination) in a cue-guided Graz-BCI paradigm. Data were acquired at 512 Hz using 15 EEG channels with online Butterworth filtering and Laplacian montage, yielding 160 trials per subject with continuous visual feedback. This minimally preprocessed dataset has been benchmarked for brain-computer interface applications using machine learning classifiers including random forests and regularized linear discriminant analysis.",
-  "methods_description": "EEG data were acquired at 512 Hz sampling rate from 14 healthy subjects (age 20-30 years) using 15 active Ag/AgCl electrodes in a g.LADYbird cap (Guger Technologies OG) with Laplacian montage, left mastoid reference, and right mastoid ground. Recording was performed using g.USBamp hardware and BCI2000 software with 8th order Butterworth band-pass filtering (online) and 50 Hz line frequency notch filtering. Subjects performed cue-guided motor imagery of right hand or feet movements for 5-second trials within a single session containing 8 runs with continuous visual bar-graph feedback.",
+  "description": "EEG recordings from 14 healthy participants performing a two-class motor imagery task (right hand versus feet) using a cue-guided Graz-BCI paradigm with continuous visual bar-graph feedback. Data were acquired from 15 EEG channels at 512 Hz over 8 runs, totalling 160 trials per subject in a single session. The dataset supports benchmarking of sensorimotor rhythm BCI classifiers such as random forests and shrinkage LDA.",
+  "methods_description": "EEG was recorded with g.USBamp amplifiers and active Ag/AgCl electrodes (g.LADYbird caps) in a Laplacian montage, referenced to the left mastoid and grounded at the right mastoid, using BCI2000. Data were sampled at 512 Hz and online filtered with 8th-order Butterworth band-pass filters. Each session consisted of 8 runs with 160 trials (80 right hand, 80 feet) and 5 s motor imagery periods with continuous feedback.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -14,27 +14,27 @@
   },
   "keywords": [
     {
+      "term": "EEG"
+    },
+    {
       "term": "motor imagery"
     },
     {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "EEG"
+      "term": "brain-computer interfaces"
     },
     {
       "term": "sensorimotor rhythms"
     },
     {
-      "term": "machine learning"
+      "term": "random forests"
     },
     {
-      "term": "common spatial patterns"
+      "term": "Machine Learning",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D000069550"
     },
     {
-      "term": "linear discriminant analysis"
+      "term": "regularized linear discriminant analysis"
     }
   ],
   "related_identifiers": [
@@ -46,7 +46,7 @@
     {
       "identifier": "10.3217/978-3-85125-378-8-61",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/nm000171",
@@ -76,14 +76,14 @@
   ],
   "funding_references": [
     {
-      "funder_name": "European Commission",
+      "funder_name": "FP7",
       "award_number": "288566",
-      "award_title": "FP7 BackHome"
+      "award_title": "BackHome"
     },
     {
-      "funder_name": "European Commission",
+      "funder_name": "FP7",
       "award_number": "287774",
-      "award_title": "FP7 ABC"
+      "award_title": "ABC"
     }
   ],
   "resource_type_general": "Dataset",
@@ -92,7 +92,7 @@
     "eeg"
   ],
   "sizes": [
-    "1.5 GB (143 files)"
+    "1.37 GB (143 files)"
   ],
   "formats": [
     ".bdf",
