@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "BNCI 2014-002 Motor Imagery dataset",
-  "description": "EEG recordings from 14 healthy participants performing a two-class motor imagery task (right hand versus feet) using a cue-guided Graz-BCI paradigm with continuous visual bar-graph feedback. Data were acquired from 15 EEG channels at 512 Hz over 8 runs, totalling 160 trials per subject in a single session. The dataset supports benchmarking of sensorimotor rhythm BCI classifiers such as random forests and shrinkage LDA.",
-  "methods_description": "EEG was recorded with g.USBamp amplifiers and active Ag/AgCl electrodes (g.LADYbird caps) in a Laplacian montage, referenced to the left mastoid and grounded at the right mastoid, using BCI2000. Data were sampled at 512 Hz and online filtered with 8th-order Butterworth band-pass filters. Each session consisted of 8 runs with 160 trials (80 right hand, 80 feet) and 5 s motor imagery periods with continuous feedback.",
+  "description": "EEG recordings from 14 healthy participants performing two-class motor imagery (right hand versus feet) in a cue-guided Graz-BCI paradigm with continuous visual feedback. Each participant completed a single session of 8 runs and 160 trials, recorded at 512 Hz from 15 Laplacian-derived EEG channels. The dataset supports benchmarking of classifiers such as random forests and shrinkage LDA for sensorimotor rhythm brain-computer interfaces.",
+  "methods_description": "EEG was recorded with g.USBamp amplifiers and active Ag/AgCl electrodes (g.LADYbird cap) at 512 Hz, referenced to the left mastoid and grounded at the right mastoid, using BCI2000. Data were online filtered with 8th-order Butterworth band-pass filters. Each session comprised recording, training and feedback phases with 80 trials each of right-hand and feet motor imagery, 5 s per trial.",
   "license": "CC-BY-ND-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -17,10 +17,17 @@
       "term": "EEG"
     },
     {
-      "term": "motor imagery"
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "Graz BCI"
+    },
+    {
+      "term": "motor imagery"
     },
     {
       "term": "sensorimotor rhythms"
@@ -29,9 +36,7 @@
       "term": "random forests"
     },
     {
-      "term": "Machine Learning",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069550"
+      "term": "machine learning"
     },
     {
       "term": "regularized linear discriminant analysis"
@@ -104,5 +109,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "1816364feb7eb55e4499d19bb84c3941bcabfb1ef86d245863a6ea7100cebdb3"
+  "source_hash": "79202a865edbf8caddcee1ec0be791405cecdf44d51cfc02d1899c425daec4e1"
 }
